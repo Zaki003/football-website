@@ -77,16 +77,16 @@ header styles
 
 .players{
     margin-top: 70px;
+    margin-bottom: 165px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 330px);
     grid-row-gap: 25px;
     grid-column-gap: 30px;
 }
 .player-frame{
-    width: 330px;
+    width: 300px;
     height: 474px;
     padding: 15px 15px 33px 15px;
-    border: 1px solid;
 }
 .player img{
     width: 100%;
@@ -105,12 +105,33 @@ header styles
     font-size: 16px;
     line-height: 26px;
 }
+/* ------------------
+news section styles 
+-------------------- */
+.news-section{
+    display: flex;
+    align-items: center;
+}
+.news-section h2 span{
+    color:rgb(89, 0, 255);
+}
+.news-section img{
+    width: 80%;
+    margin-left: 100px;
+}
+#news-part{
+    width: 100%;
+    margin-right: 200px;
+}
+#news-link{
+    margin-top: 70px;
+    margin-left: 20px;
+}
 
  /* -------------
    footer styles
  ---------------- */
 .footer-part{
-    width: 484px;
     display: flex;
     flex-direction: column;
     align-items: center;
