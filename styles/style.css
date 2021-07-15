@@ -1,10 +1,12 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
 /* utilities */
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(247, 247, 247);
 }
 .container{
     display: flex;
@@ -92,6 +94,8 @@ header styles
     width: 300px;
     height: 474px;
     padding: 15px 15px 33px 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(160, 158, 158);
 }
 .player img{
     width: 100%;
@@ -213,4 +217,131 @@ users and about us section styles
      font-size: 18px;
      line-height: 24px;
      margin:0;
+}
+
+/* ----------------------
+      web for mobile
+----------------------- */
+@media screen and (max-width:688px){
+    /* header styles */
+    .header-modifier{
+        height: 695px;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-and-button h1{
+        line-height: 50px;
+        font-size: 36px;
+        width: 278px;
+        margin: 112px 16px 30px;
+    }
+    .link-button{
+        display: flex;
+        justify-content: center;
+        background-color: #E02C6D;
+        text-decoration: none;
+        margin-left: 19px;
+        color: white;
+        width: 168px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 10px 0px;
+    }
+    .header-image img{
+        width:329px;
+        height: 259px;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    /* --------------------
+    players display styles 
+    --------------------- */
+    .players{
+        margin-top: 47px;
+        margin-bottom: 165px;
+        display: grid;
+        grid-template-columns: repeat(1, 330px);
+        grid-row-gap: 24px;
+    }
+    .player-frame{
+        width: 300px;
+        height: 474px;
+        padding: 15px 15px 0 15px;
+        box-shadow: none;
+    }
+    /* news section */
+    .news-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .news-section img{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25px;
+    }
+    #news-part{
+        width: 50%;
+        margin-right: 20px;
+    }
+    #news-link{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    /* user and about us part */
+    .user-and-aboutus{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        align-items: center;
+    }
+    .users-section{
+        width: 80%;
+        background-color: rgb(89, 0, 255);
+        height: 300px;
+        text-align: center;
+        padding-top: 20px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .login-form input{
+        width: 250px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    #signup-button{
+        padding: 5px 0;
+        border: 0;
+        background-color: gray;
+        color: aliceblue;
+        width: 260px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .about-us{
+        width: 75%;
+        background-color: gray;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: honeydew;
+        margin-top: 10px;
+    }
+    /* footer part */
+    .footer-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        margin-bottom: 187px;
+    }
+    .logo{
+        width: 270px;
+        height: 63px;
+        margin-bottom: 20px;
+    }
 }
