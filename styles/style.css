@@ -260,7 +260,7 @@ users and about us section styles
     --------------------- */
     .players{
         margin-top: 47px;
-        margin-bottom: 165px;
+        margin-bottom: 60px;
         display: grid;
         grid-template-columns: repeat(1, 330px);
         grid-row-gap: 24px;
